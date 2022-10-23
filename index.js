@@ -29,7 +29,7 @@ app.get('/category/:id', (req, res) => {
         const selectedCategory = news.filter(n => n.category_id === id)
         res.send(selectedCategory)
     }
-    console.log(id)
+
 })
 
 app.get('/news/:id', (req, res) => {
